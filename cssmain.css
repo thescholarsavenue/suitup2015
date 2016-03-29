@@ -1,0 +1,199 @@
+body{
+	font-family: Titillium Web;
+	text-align: center;
+	font-size: 16px;
+}
+
+.row{
+	margin: 0;
+	text-align: center;
+}
+
+.text1{
+	font-weight: 700;
+	fill: #eee;
+	font-size: 14px;
+}
+.banner-text1{
+	font-weight: 700;
+	fill: #eee;
+	font-size: 50px;
+}
+.banner-text2{
+	font-weight: 400;
+	fill: #eee;
+	font-size: 17px;
+}
+.rightnav{
+	margin-right: 50px;
+	
+	font-size: 20px;
+	font-weight: 400;
+}
+.brand{
+	
+	font-size: 30px;
+	font-weight: 300;
+}
+.jumbo{
+	
+	font-size: 100px;
+	font-weight: 900;
+	color: #222222;
+}
+.jumbo2{
+	
+	font-size: 50px;
+	font-weight: 900;
+}
+.tick line{
+    opacity: 0.2;
+    stroke-dasharray:2;
+  }
+.descrip{
+	
+	font-size: 20px;
+	font-weight: 300;
+}
+.descrip2{
+	
+	font-size: 30px;
+	font-weight: 400;
+}
+#tool-tip-text-1{
+	font-size: 20px;
+	fill: red;
+	font-weight: 600;
+}
+#tool-tip-text-2{
+	font-size: 15px;
+	fill: red;
+	font-weight: 700;
+}
+.company-name{
+	font-weight: 900;
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+	
+}
+.casual-text, .hired-1{
+	font-weight: 600;
+	font-size: 35px;
+	margin : 0;
+}
+.redletter{
+	color: #E74C3C;
+	font-weight: 700;
+}
+.hired-2{
+	font-size: 15px;
+	font-weight: 400;
+}
+.mired{
+	font-size: 20px;
+	font-weight: 300;
+}
+.sex{
+	font-size: 12px;
+	font-weight: 400;
+	fill: #eee;
+}
+.sex2{
+	font-size: 15px;
+	font-weight: 600;
+}
+.analysis{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: left;
+}
+th.headerSortUp { 
+    background-image: url(resources/asc.gif);
+    cursor: pointer; 
+    font-weight: bold;
+    background-repeat: no-repeat; 
+    background-position: right; 
+    padding-left: 20px; 
+    border-right: 1px solid #dad9c7; 
+    margin-left: -1px;
+} 
+th.headerSortDown { 
+    background-image: url(resources/desc.gif); 
+    cursor: pointer; 
+    font-weight: bold;
+    background-repeat: no-repeat; 
+    background-position: right; 
+    padding-left: 20px; 
+    border-right: 1px solid #dad9c7; 
+    margin-left: -1px;
+}
+th.header { 
+    background-image: url(resources/bg.gif); 
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: right; 
+    padding-left: 20px; 
+    border-right: 1px solid #dad9c7; 
+    margin-left: -1px; 
+}
+.col-md-4{
+	padding: 0;
+	margin-right: 0;
+}
+.colours{
+	font-weight: 900;
+	font-size: 10px;
+}
+.colours2{
+	font-weight: 700;
+	font-size: 20px;
+	color: #333;
+	cursor: pointer;
+}
+.bar rect {
+  fill: #e74c3c;
+  stroke-width:1;
+  stroke:#eee;
+  shape-rendering: crispEdges;
+}
+
+.bartotal rect {
+  fill: #222;
+  stroke-width:1;
+  stroke:#eee;
+  shape-rendering: crispEdges;
+}
+
+.bartotal2 rect {
+  fill: #D41F1F;
+  stroke-width:1;
+  stroke:#eee;
+  shape-rendering: crispEdges;
+}
+
+
+.bar text {
+  fill: #fff;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.list-head{
+	font-weight:700;
+	border-top :1px solid black;
+}
+
+
+.list-body{
+	cursor: pointer; 
+}
+.list-body:hover{
+	color: red;
+	text-decoration: underline;
+}
