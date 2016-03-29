@@ -197,3 +197,7 @@ th.header {
 	color: red;
 	text-decoration: underline;
 }
+
+.bolded{
+	font-weight: 900;
+}

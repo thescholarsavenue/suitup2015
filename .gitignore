@@ -8,3 +8,4 @@ ppos.txt
 unplaced.txt
 node_modules
 dist
+.grunt
