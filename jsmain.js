@@ -230,7 +230,7 @@ var dep_cmp = function(course, values){
   var  x = d3.scale.linear().range([70,670]);
   var  y = d3.scale.linear().range([330, 20]);
   console.log('yoyo');
-  placenumber_plot(svg,x,y,"% of Registered Students Placed in Dec",100, -600);
+  placenumber_plot(svg,x,y,"% Placed (Without PPO)",100, -600);
   if(values){
 	for( var i=0;i<values.length;i++){
 		values[i]=Number(values[i]);
@@ -775,6 +775,27 @@ window.onload = function(){
         return coldep[deps[1]];
     }).append("title").text(function(d){return d});
 
+      $(".part-1-button").click(function(){
+        $(".part-1-button").css("background-color","#333").css("color","#eee");
+        $(".part-2-button").css("background-color","#F1C40F").css("color","#333");
+        $(".part-3-button").css("background-color","#F1C40F").css("color","#333");
+        window.location="#part1";
+
+      });
+      $(".part-2-button").click(function(){
+        $(".part-2-button").css("background-color","#333").css("color","#eee");
+        $(".part-1-button").css("background-color","#F1C40F").css("color","#333");
+        $(".part-3-button").css("background-color","#F1C40F").css("color","#333");
+        window.location="#part2";
+
+      });
+      $(".part-3-button").click(function(){
+        $(".part-3-button").css("background-color","#333").css("color","#eee");
+        $(".part-2-button").css("background-color","#F1C40F").css("color","#333");
+        $(".part-1-button").css("background-color","#F1C40F").css("color","#333");
+        window.location="#part3";
+
+      });
 
       /*    var unplaced_peeps = unplaced_db.find();
           var ppo_peeps = ppo_db.find();
