@@ -513,8 +513,8 @@ window.onload = function(){
 		d3.select(".svg-banner-2").append("text").attr("text-anchor","middle").attr("x",60).attr("y",155).attr("class","banner-text1").text("18");
 		d3.select(".svg-banner-2").append("text").attr("text-anchor","middle").attr("x",60).attr("y",180).attr("class","banner-text2").text("Days");
 
-		d3.select(".svg-banner-2").append("text").attr("text-anchor","middle").attr("x",60).attr("y",250).attr("class","banner-text1").text("11.7");
-		d3.select(".svg-banner-2").append("text").attr("text-anchor","middle").attr("x",60).attr("y",275).attr("class","banner-text2").text("Average LPA");
+		d3.select(".svg-banner-2").append("text").attr("text-anchor","middle").attr("x",60).attr("y",250).attr("class","banner-text1").text("237");
+		d3.select(".svg-banner-2").append("text").attr("text-anchor","middle").attr("x",60).attr("y",275).attr("class","banner-text2").text("Hours Tests");
 
     for(var j=0;j<8;j++){
         colourify('testcolours'+j);
