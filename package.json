@@ -1,5 +1,5 @@
 {
-  "name": "placements15",
+  "name": "suitup15",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nuwandavek/placements15.git"
+    "url": "https://thescholarsavenue.github.io/suitup15.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nuwandavek/placements15/issues"
+    "url": "https://thescholarsavenue.github.io/suitup15/issues"
   },
-  "homepage": "https://github.com/nuwandavek/placements15",
+  "homepage": "https://thescholarsavenue.github.io/suitup15",
   "dependencies": {
     "grunt": "^0.4.5"
   },
