@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SuitUp15'</title>
+		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js"></script>
+		<!--script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script-->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript" src="jsmain.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="cssmain.css">
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,900,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/css/bootstrap-select.min.css">
+	</head>
+	<body>
+		<script>
+  			window.fbAsyncInit = function() {
+    			FB.init({
+      				appId      : '1588913611423769',
+      				xfbml      : true,
+      				version    : 'v2.6'
+    			});
+  			};
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+				
+				<div id="home-tab" style="display:block">
+					<div >
+						<p class="jumbo" style="margin-top:70px;margin-bottom:0;">SuitUp15</p>
+						<div class="col-md-2"style="position: absolute; top: 30px; left: 300px; font-size: 17px">
+							<img src="tsa.png" class="img-rounded img-responsive" style="transform: scale(2)"></div>
+
+						<p style="position: absolute; top: 80px; left: 380px; font-size: 17px">
+							Presents</p>
+						<p class="descrip" style="color:#222; margin-bottom:0;"><i class="fa fa-cog"></i>     An IITKGP 2015 Placement Round-up     <i class="fa fa-cog"></i></p>
+					</div>
+					<!--div class="row" id="testcolours0"></div-->
+					
+					<div class="row">
+						<div class="col-md-12">
+							<p class="col-md-10 col-md-offset-1"style="color: #333; background-color: #E74C3C;margin-top: 20px; padding: 10px;font-weight: 700">
+						<i class="fa fa-exclamation-triangle"></i> Disclaimer : The following article contains data about the December 2015 placement season only.</p>							
+						</div>
+						<div class="col-md-12"id="mainsvg">
+							<div class="col-md-12" id="mainsvgDayAll"></div>
+						</div>
+					</div>
+					<p style="font-size: 17px;font-weight: 600">Created with <i class="fa fa-heart"></i> by <a href="http://nuwandavek.github.io/" style="color: #333">Vivek Aithal</a></p>
+					<div class="col-md-6 col-md-offset-3">
+						<div class="fb-like" data-href="http://thescholarsavenue.github.io/suitup15" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+						<div class="col-md-3"></div>
+						</div>
+					<div class="row" id="testcolours7"></div>
+					
+					
+						<div class="row analysis">
+							<div class="col-md-6 col-md-offset-3">
+							<p>
+								<span style="font-size:50px;line-height: 1;">I</span>n the wee hours of a cold winter morning, while people are still tucked in tight under three warm blankets, an odd KGPian trudges towards Vikramshila. Clad in a crisp suit, her formal air is abruptly broken by her rickety bicycle. She reaches Nalanda complex, fragrant tensed faces all around; some greet her with worried smiles and quickly dive back into memorizing what their CVs speak about them. It is December 1st 2015, the first day of the on-campus placement process at IIT Kharagpur. Though hiring begins in December, the actual process usually starts by early September when companies fly down to KGP to give presentations in an effort to woo prospective employees. This is followed by CV submissions and written/online tests leading up to interviews in December. For some students the process starts as early as the summer of their third year, when they receive PPOs (Pre-Placement Offers). Despite the prospect of a fancy job title and a fat pay cheque, it can be a harrowing time for most final year students on campus. Here is an in-depth analysis of 2015's placement numbers, results of the survey CDC conducted among students who secured job offers, followed by all the recent developments in the CDC that promise a much smoother process for future batches.</p>
+							</div>
+
+						<div style="height:50px"></div>
+						</div>
+						<div class="row butt1" style="font-weight: 700; font-size: 15px">
+							<div class="col-md-6 col-md-offset-3">
+								<div class="part-1-button" style="background-color: #333; color: #eee; margin:5px;padding: 10px;cursor: pointer;"href="#part1">Part 1 : Placements 2015</div>								
+							
+								<div class="part-2-button" style="padding: 10px; background-color: #F1C40F; margin:5px; color: #333;cursor: pointer;"href="#part2">Part 2 : The Graduating Batch Survey</div>							
+								<div class="part-3-button" style="padding: 10px; background-color: #F1C40F;  margin:5px;color: #333;cursor: pointer;"href="#part3">Part 3 : Message from CDC</div>								
+							</div>
+						</div>
+					<div class="col-md-8 col-md-offset-2" style="border-top:1px solid #ccc;margin-top: 30px; ">
+					<p  style="color: #333; background-color: #E74C3C;margin-top: 20px; padding: 20px;font-weight: 700">
+						<i class="fa fa-exclamation-triangle"></i> Disclaimer : The following article contains data about the December 2015 placement season only. Though all reasonable effort has been made to present accurate information, this site is to be used only for general purposes. TSA will not be liable for any damage arising from the use of the site. No trends or hiring patterns are to be inferred form this article, unless explicitly mentioned. Students are encouraged to contact the CDC office for official data, if required. 
+					</p>				
+
+					</div>
+					<div id="part1">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2" style="border-top: 1px solid #ccc;margin-top: 30px;">
+								<p class="jumbo2"><span style="color: #E74C3C">Part 1 : </span>Placements- December 2015</p>
+								<p style="text-align: left; font-size:35px;">1.1 Overview</p>
+							</div>
+							<div class="col-md-12">
+								<div class="col-md-12" id="numsvg"></div>
+								<div class="col-md-6 col-md-offset-3" style="text-align: left">
+									<p>The December placement season lasted for 18 days from December 1st to 18th. In this span of time, 1036 job offers were made to 981 students, across 28 departmental streams. 130 students had already accepted pre-placement offers after their third year internships. Out of 1929 registered students, 57.6 % were hired by the end of December. The placement percentage of 5 year undergraduate students (Dual degree/M.Sc./B.Arch) was the highest at 60.7%, followed by 4 year undergraduate students at 56.5% and postgraduate students at 36.2%. Day 1, as the hype has it, saw 144 students obtain job offers, highest among all days. UG 5th year students out-performed their fellow 4th year students on day one and two and performed almost as good as them later on. PG students spiked on day 3 with 40 job offers, but lost steam in the following days.</p>
+									<p>
+									The cumulative placement curves are fairly smooth, but for two inflection points due to placements on day 10 and day 16. This can be attributed to core companies hiring late in the placement season. Also, over 50% of the total people placed, were placed before day 5, which also means that 450 job offers were made after day 5, and that there is little reason to worry for people who don't make it in the first week.</p>
+
+									<p>
+										<b>Note</b> : The placement process is still going on. In January, students still looking for job opportunities were asked to re-register, in which a total of 597 students registered. 293 students, who were not placed at the end of December were no longer seeking for a job via the CDC. 78 registered students have been placed in the months of January-March. The CDC has ensured job opportunities for a total of 1189 students, till date.
+									</p>
+									
+								</div>
+								<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: left; font-size:35px;margin-top: 20px; border-top: 1px solid #ccc;">1.2 Departments</p>
+								</div>
+								<div class="col-md-12" id="depdaysvg"></div>
+								<div class="col-md-6 col-md-offset-3" style="text-align: left; margin-top: 20px">
+									<p>
+										The above visualization represents department-wise placements on each day, and number of people placed is proportional to the radius of the bubble. From first glance, departments can be categorized into various divisions - top heavy, spread out, sparse placements, etc. CS and EC clearly dominate for the first few days, whereas departments such as ME, CH, EE had consistent placements throughout the season. AE and IM had sparse, but consistent placements throughout. MI and CE had a significant boost on day 16. This qualitative behavior offers a partial picture and can be better understood by looking at how many people remained unplaced in each department (or placement percentage per department), since the number of those registered varies from 4 in QE to 203 in EC. 
+									</p>
+									<p>
+										If we compare how various departments fared, CS topped the total percentage charts (86.2%) among engineering streams with over 20 students. And second in line was IM at 82%. The bottom-most department was AG, by a fairly wide margin. IM, CS, EC, CH, IE and ME had over 70% of their UG 4year students placed, while AE stood the lowest with 31.8%. But interestingly, AE UG 5year students performs considerably better than the B.Techs with 72.4% of them placed. The dual degree students generally outperform their B.Tech counterparts with EE, CS and IM securing over 80% placements. This establishes that Dual degree students have a slight advantage owing to the extra year, which means a possible extra internship and general experience. AR received little love from companies as it stood at 34.37%
+									</p>
+
+									<p>
+									Among the sciences, HS 5 year course ruled the roost with 92.59% followed by MA at 75%. All 5 year science streams had over 50% placements, this season. 
+									</p>
+									
+								</div>
+								<div class="col-md-12" style="margin-top: 20px;">
+								<p class="descrip2 col-md-6">Compare Departments: <select class="selectpicker depcompare" multiple data-live-search="true" data-size="10"id="dep-options" data-width="200px" ></select></p>
+								<p class="descrip2 col-md-6">Select Course <select class="selectpicker courseselect" data-live-search="true" data-size="4"id="course-options" data-width="100px" ></select></p>
+								</div>
+								<div class="col-md-12" id="depcmpsvg"></div>
+								
+								<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: left; font-size:35px;margin-top: 20px; border-top: 1px solid #ccc;">1.3 PPOs (Pre-Placement Offers)</p>
+								</div>
+								<div class="col-md-6 col-md-offset-3" style="text-align: left;">
+									<p>
+										UG 4 year students secured the highest number of PPOs (70) followed by UG 5 year students (57) and PG (3). The difference between UG 4 year and 5 year PPOs could be due to reluctance on the companies' part to award a PPO to a student who still has 2 more years left to study. It remains to be seen if the new rule that requires UG 5 year students to do their compulsory internship after their 4th year helps them is registering more PPOs. CS had the highest number of accepted PPOs (37), followed  by EC(18), and together they made up 42.3% of all PPOs accepted. Among the sciences, MA was on top, with 15 PPOs. Software development was clearly the most popular profile among accepted PPOs.
+									</p>
+								</div>
+								<div class="col-md-12" style="margin-top: 20px;">
+								<p class="descrip2">Select Department : <select class="selectpicker depselect" data-live-search="true" data-size="7"id="dep-options-2" data-width="60px" ></select></p>
+								</div>
+								<div class="col-md-12" id="depbreakup"></div>
+							
+								<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: left; font-size:35px;margin-top: 20px; border-top: 1px solid #ccc;">1.4 Gender</p>
+								</div>
+								<div class="col-md-6 col-md-offset-3" style="text-align: left;">
+									<p>
+										The overall placement percentage of Female:Male students was at 48:52. Though this seems like both genders did equally well, a closer look reveals some disparity. The UG  women performed much better than their PG counterparts. 77.1% of registered UG 4 year female students and 83.8% of registered UG 5 year female students received job offers, whereas only 28.8% PG female students got placed. Among male students however, 67.9% UG 4 year students, 70.5% UG 5 year students and 36.3%. So, on an average, UG women had a 10% higher chance of getting placed than UG men, but PG women had around 8% less probability than PG men.							
+									</p>
+								</div>
+								<div class="col-md-12" id="gender"></div>
+							
+					
+								<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: left; font-size:35px;margin-top: 20px; border-top: 1px solid #ccc;">1.5 Companies</p>
+								</div>
+								
+								<div class="col-md-12" id="sectorsvg"></div>
+								<div class="col-md-6 col-md-offset-3" style="text-align: left;">
+									<p>There were companies from six broad sectors and their breakup was as follows - Consulting-18, Core Engineering*-86, Data Analytics-29,  Finance-14, Software Development-72, and 31 other Non-Core Profiles. A total of 250 company profiles hired from KGP this year. Out of these profiles, 214 did not have any CGPA cut-off, and an additional 26 had a cutoff less than or equal to 7. The logisics team of the CDC reports that a total of 237 hours of tests were conducted during December.</p>
+									<p>	*Core companies are defined as those that do not deal with consulting, analytics, finance, or start-ups. Software development companies, though core for CS, EC and MA have their own bracket as they would give an incorrect picture about the number of core companies. Core companies essentially deal directly with engineering disciplines students study here, at IIT.
+									</p>
+								</div>
+								<div class="col-md-12" id="compsvg"></div>
+								</div>
+
+	
+								<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: left; font-size:35px;margin-top: 20px; border-top: 1px solid #ccc;;">1.6 CGPA</p>
+								</div>
+								
+								<div class="col-md-4 col-md-offset-2" id="ugcgpa">
+									<img src="ugcg.jpg" class="img-responsive"></div>
+								<div class="col-md-4" id="pgcgpa">
+									<img src="pgcg.jpg" class="img-responsive">
+								</div>
+								<div class="col-md-6 col-md-offset-3" style="text-align: left; margin-top: 20px; margin-bottom: 50px">
+									<p>CGPA of undergraduate students who got placed <span class="redletter">averaged at 7.83 (median)</span>, while those of the unplaced students had a median of 7.43. But upon further inspection, we see another interesing trend. The registered CGPAs of both UGs and PGs is a near normal curve. But the unplaced histogram for UG students forms a skewed curve peaking between 6 and 6.5, whereas the unplaced histogram for PG students remains near normal. This could possibly mean that the CGPA is a bottleneck for UG students to get placed, whereas the bottleneck lies somewhere else, for PG students. This claim is further corroborated in further sections of this article, when graduating students were asked about what hurdles they faced in December, via a survey.  
+					
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="part2">
+						<!--div class="row" id="testcolours2"></div-->
+
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2" style="border-top: 1px solid #ccc;margin-top: 30px;">
+								<p class="jumbo2"><span style="color: #E74C3C">Part 2 : </span>The Graduating Batch Survey</p>
+							</div>
+							<div class="col-md-6 col-md-offset-3" style="text-align: left;">
+							<p>The CDC conducted a survey among all students who got placed in December, and have been kind enough to share the results with us. The following is a brief analysis on expectations of students, their trust levels and their perceived hurdles and strengths. A total of 826 students filled the survey (630 UG students and 190 PG students).
+							</p>
+							<p>
+							When asked about their preferred job sectors (one could choose multiple sectors), 58% UG students wanted to work at a core engineering company, while 50% wanted to work on an analytics based firm. Among PG students, however, an overwhelming 86% wanted to work at a core company.
+							</p>
+							<div class="col-md-12" style="text-align: center; margin-bottom: 30px">
+								<img src="work.jpg" width="450px"></div>
+
+							<p>
+							When asked about what factors contributed to them securing a job, and what factors hindered their job prospects, students felt that CGPA and communication skills were the major trouble makers. Problem solving skills, understandably topped the strengths bracket. When we looked closer at the CGPA, there was a clear trend where students with lower CGPA found it as a bigger hurdle than people with higher CGPAs, busting the myth that “In the end, CGPA does not matter at all”. In part 3, we explore how CGPA is not a make-or-break criterion for getting a job, but merely a threshold used to screen applicants.
+							</p>
+							<div class="col-md-12" style="text-align: center; margin-bottom: 30px">
+							<img src="hurdle.jpg" width="450px"></div>
+							<div class="col-md-12" style="text-align: center; margin-bottom: 30px">
+							<img src="strength.jpg" width="450px"></div>
+							<div class="col-md-12" style="text-align: center; margin-bottom: 30px">
+									<img src="cgsurvey.jpg" width="450px"></div>
+							<p>
+							To the question about the date by which students expected to get placed, the results were quite interesting. Students did almost equal to, or better than their own expectations for the first 3-4 days of placements, but it dwindled over time. 
+							</p>
+							<div class="col-md-12" style="text-align: center; margin-bottom: 30px">
+									<img src="dayexp.jpg" width="450px"></div>
+							<p>
+							Finally, on the question of trust among fellow individuals, the results are sure to evoke warm fuzzy feelings in readers. Placements happen in an extremely competitive environment, and when students begin viewing it as a zero sum game, co-operation and mutual help might be at an all time low, is what we suspected. The respondents had 4 options - they trusted their friends more than before, same as before placements, less than before or that they did not trust their friends at all. An overwhelming 53.5% students trusted their friends as much as they did before, and an additional 36.8% students trusted their friends more. 
+
+							</p>
+							</div>
+							<div class="col-md-12" style="text-align: center; margin-bottom: 30px">
+									<img src="trust2.jpg" width="450px"></div>
+						</div>
+					</div>
+
+					<div id="part3">
+						<!--div class="row" id="testcolours2"></div-->
+
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2" style="border-top: 1px solid #ccc;margin-top: 30px;">
+								<p class="jumbo2"><span style="color: #E74C3C">Part 3 : </span>Message from CDC</p>
+							</div>
+
+							<div class="col-md-6 col-md-offset-3" style="text-align: left; margin-top: 20px;">
+									<p>The CDC understandably bustles with activity through the year, with internships, calling companies for PPTs and placements, the placement season and finally the selection of a new batch of placement committee members to carry the torch. The whole year is hectic and there is little time to stop and think about sweeping changes to current methods. But despite the unforgiving schedule, there have been a lot of significant developments brewing at the CDC, this year. 
+									</p>
+									<p>The CDC has a new website which despite its infancy, contains resources like videos of placed students sharing their experiences, a guide to graduate school applications, resources for entrepreneurs and civil service aspirants, etc. A lot of CDC officers, students, and alumni have contributed to the content on the website. CDC is initiating tailor-made Professional Skills courses conducted by industry experts, for students to improve communication/soft skills. The CDC office recently conducted seminars for all non-final year students to share insights of this year's placements and the graduate batch survey results. The seminar also contained learnings from feedback companies gave the CDC, and the students in general. They are also trying to get the students who are already placed in December, to help the pre-final year students through the spring semester. We recently caught up with the placement committee members and the Professors at the CDC and the following sections contain the message they wanted us to convey to all students.				
+									</p>
+							</div>
+
+							<div>
+								<div class="col-md-8 col-md-offset-2">
+									<p style="text-align: left; font-size:35px;margin-top: 20px; border-top: 1px solid #ccc;;">1.1 Message to First and Second Year Students</p>
+								</div>
+								
+								<div class="col-md-6 col-md-offset-3" style="text-align: left; margin-top: 20px;">
+									<p>Upon reviewing hundreds of survey responses, talking to hundreds of students and company recruiters, all issues that affect career prospects could be categorized into Hurdles and Strengths.</p>
+									<p class="bolded" style="font-size: 25px">Hurdles</p>
+									<p>Hurdles are bare-minimums that a student must have, so that he/she is not rejected.  It is important to note that having a good standing in these does not necessarily secure a candidate a job interview, let alone a job. But these criteria are used to filter the pool that is considered for an interview, from the pool that applied. There are two particular aspects that stood out as the greatest hurdles to a cozy job - CGPA and communication skills. Another notable property of these metrics is that they are time sensitive; they become harder to fix with the passage of time.</p>
+									<p class="bolded">CGPA</p>
+									<div class="col-md-6" id="ugcgpa">
+									<img src="ugcg.jpg" class="img-responsive"></div>
+									<div class="col-md-6" id="cgpa" style="margin-bottom: 20px">
+									<img src="cgsurvey.jpg" class="img-responsive"></div>
+									<p>Revisiting the two CGPA plots, it is fairly clear that CGPA is not unimportant. CGPA is also not something that guarantees a job. It is a threshold over which the probability of rejection based on that criteria reduces greatly. The plot on the right denotes that students believe this to  be true, and the histogram on the left corroborates this via data of unplaced students in December. Companies believe that even though CGPA might not be a direct function of one's intelligence, it does portray one's willingness to perform activities that are not fun, but are necessary, which is a skill most companies value. So, a CGPA of 7.5-8 is a comfortable place for a student to be.
+									</p>
+									<p class="bolded">Communication Skills</p>
+									
+									<p>Lack of good communication skills is also a factor that affects a lot of students. Some companies complain that despite having the necessary technical acumen, students fail to make the cut solely for their poor communication skills. So, students must actively overcome this barrier by working on both English proficiency and succinctly conveying ideas to others.
+									</p>
+									<div class="col-md-12" style="text-align: center; margin-bottom: 30px">
+									<img src="hurdle.jpg" width="450px"></div>
+
+									<p class="bolded" style="font-size: 25px">Strengths</p>
+									<p>Strengths were the metrics upon which an applicant was differentiated from another. Due to the varied nature of strengths, each student has a unique opportunity to define him/herself the way he/she wants. In the following plot, one has to keep in mind that 50% 'personal projects' or 10% 'involvement in sports' does not necessarily mean that they are less valuable. It could very well mean that only around 50% students had personal projects and they found it as their strength. Or that only around 10% students play a sport as more than a leisure activity, and that it turned out to be their strength. Basically, strengths help you to stand out in an otherwise homogenous crowd.</p>
+									<p>So, students should ideally explore what they find interesting and read up about it, take a course online, take part in competitions and possibly attend conferences/events, and paint her unique picture on the canvas of life. 
+									</p>
+									<div class="col-md-12" style="text-align: center;">
+									<img src="strength.jpg" width="450px"></div>
+									
+								</div>
+
+								
+
+								<div class="col-md-8 col-md-offset-2">
+									<p style="text-align: left; font-size:35px;margin-top: 20px; border-top: 1px solid #ccc;;">1.2 Message to Pre-Placement Year Students</p>
+								</div>
+								
+								<div class="col-md-6 col-md-offset-3" style="text-align: left; margin-top: 20px;">
+									<p>
+										Despite CGPA and communication skills proving to be tough hurdles to surpass, a lot can be done from summer to December to offset them. On CGPA front, it is to be noted that out of the 250 profiles that hired from campus, 150 profiles had a test - quantitative, core or coding. So, automatically the test designed and ratified by companies may have a higher weightage than CGPA. 20 profiles used the Employability Test scores as the sole criterion to screen applicants. So, with a couple of months of preparation, even students with lower CGPA have a good shot at companies.</p>
+										<p>Though communication skills are built over time, a few hacks definitely amplify an applicant's chances. The two most important things to do are to :
+										</p><ol><li>Make an effective CV and get it screened by as many experienced people as possible</li><li>Have a significant number of mock interviews with friends before the actual interview.</li><li>Additionally, knowing a good amount about the company and the profile boosts an applicant's rapport with his/her interviewers.</li></ol>
+
+										<p>
+											Have faith in your fellow students, for they will be your rocks during tough times, and greatly aid in the preparation process. The graduating batch overwhelmingly felt that they trust as their fellow KGPians as much as they had before, or greater.  
+										</p>
+									<div class="col-md-12" style="text-align: center; margin-bottom: 30px">
+									<img src="trust.jpg" width="450px"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row butt2" style="font-weight: 700; font-size: 15px;">
+							<div class="col-md-6 col-md-offset-3">
+								<div class="part-1-button" style="background-color: #333; color: #eee;margin: 5px; padding: 10px;cursor: pointer;" href="#part1">Part 1 : Placements 2015</div>								
+							
+								<div class="part-2-button" style="padding: 10px; background-color: #F1C40F; margin: 5px;color: #333;cursor: pointer;"href="#part2">Part 2 : The Graduating Batch Survey</div>								
+								<div class="part-3-button" style="padding: 10px; background-color: #F1C40F; margin: 5px;color: #333;cursor: pointer;"href="#part3">Part 3 : Message from CDC</div>								
+							</div>
+					</div>
+
+					<!--div class="row" id="testcolours3"></div-->
+
+
+					<!--div class="row" id="testcolours4"></div-->
+					<div class="row" id="testcolours5"></div>
+
+					<div class="row" >
+						<!--div class="col-md-7 col-md-offset-2" style="margin-top:30px ">
+						<p>We'd like to express out gratitude to the CDC office, and Ankur Agarwal, a placement committee member  for entertaining all our questions and for sharing data that made this article possible.</p>
+						<p>For queries, suggestions or a friendly chat, contact : vivekaithal44[at]gmail[dot]com</p>
+						</div-->
+						
+						<div class="col-md-12" style="text-align: center;">
+						<p>In Collaboration with</p>
+							<a href="http://www.metakgp.org"><img src="metakgp.jpg" class="img-rounded" width="60px"></a>
+							<a href="http://www.cdc.iitkgp.ernet.in"><img src="kgplogo.jpg" class="img-rounded" width="220px"></a>
+						</div>
+					</div>
+					<div class="row" id="testcolours4"></div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+						<div class="fb-like" data-href="http://thescholarsavenue.github.io/suitup15" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>							
+						</div><div class="col-md-3"></div>
+
+						<div class="col-md-6 col-md-offset-3">
+							<div class="fb-comments" data-href="http://thescholarsavenue.github.io/suitup15" data-width="600" data-numposts="10">			
+						</div><div class="col-md-3"></div>
+						</div>					
+					</div>		
+
+
+				</div>
+
+
+
+
+			</body>
+		</html>
